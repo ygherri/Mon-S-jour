@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 4px solid beige;
+}
+nav h1 {
+    color : black;
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 30px;
+
+
+}
+nav h1:hover {
+    color:rgb(248, 145, 108)
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 400px;
+}
+nav .onglets a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+
+}
+nav .onglets a:hover {
+    font-weight: bold;
+}
+@media screen and ( max-width:680px) {
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: url(media/imageprincipale.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin: 0; 
+    opacity: 0.9;
+    
+    
+}
+header h1 {
+    font-family: 'Playfair Display', sans-serif;
+    padding: 10px;
+    color :black;
+    background-color: beige;
+    border-radius: 30px;
+    box-shadow:8px 8px 12px black;
+    text-align: center;
+
+
+}
+.search{
+    vertical-align:middle;
+    height: 500px;
+    margin-top: 10%;
+}
+.block_container {
+    text-align: center;
+    
+
+}
+.block_container div {
+    display: inline-block;
+    vertical-align: middle;
+   
+}
+.search_text{
+    
+    border-radius: 10px;
+    background-color: beige;
+    padding: 15px;
+    width: 400px;
+}
+
+.button {
+    
+    padding: 1rem;
+    border-radius: 2rem;
+    background: linear-gradient(#f7d6c4, #f7bbcf);
+    border: #f7d6c4;
+    color: rgb(10, 10, 10);
+    box-shadow: 5px 5px 10px #272626;
+    margin-bottom: 2rem;
+    width: 180px;
+    font-size: medium;
+    margin-top: 2rem;
+    cursor:pointer;
+    margin-left: 20px;
+}
+.button:hover{
+    background-color: rgb(248, 145, 108);
+    box-shadow: 10px 10px 10px #030303;
+}
+
+/* ****************section*********** */
+h2{
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+
+
+.liste-villes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   padding: 30px ;
+   
+    
+}
+.ville {
+    
+    margin-bottom: 20%;
+    padding :30px;
+    block-size: 10px;
+    
+
+  
+}
+
+
+img {
+    box-shadow: 3px 3px 4px gray;
+    border-radius: 20px;
+    object-fit: contain;
+    max-width: 100%;
+    
+
+}
+img :hover {
+    box-shadow: 3px 3px 4px black;
+}
+
+#nom-ville {
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+div {
+    display: block;
+}
+
+
+section {
+    border-bottom: 4px solid beige;
+    display: block;
+
+   
+    
+}
+footer {
+    padding-top: 5px;
+    background-color: beige;
+    height: 200px;
+    display: flex;
+    align-content: center;
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+footer div {
+    margin-left: 0%;
+    width: 33%;
+    margin-left:30px;
+}
+footer div ul li a {
+    text-decoration: none;
+}
+footer div ul li a:hover{
+    font-weight: bold;
+}
+footer div ul  {
+    list-style:none;
+}
+footer .information a {
+    text-decoration: none;
+    margin-left: 30px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+
+
+
+h3 {
+    padding: 0;
+    margin-left: 30px;
+    
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+}
+ul li{
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.fa {
+    display: flex;
+}
+
