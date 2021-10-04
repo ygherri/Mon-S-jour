@@ -39,6 +39,7 @@ nav .onglets a{
 nav .onglets a:hover {
     font-weight: bold;
 }
+
 @media screen and ( max-width:680px) {
     nav .onglets{
         margin-left: 0px;
@@ -76,6 +77,7 @@ header h1 {
 }
 .block_container {
     text-align: center;
+    justify-content: center;
     
 
 }
@@ -125,19 +127,31 @@ h2{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   padding: 30px ;
+   padding: 40px ;
    
     
 }
 .ville {
     
     margin-bottom: 20%;
-    padding :30px;
+    padding :80px;
     block-size: 10px;
     
 
   
 }
+ .photos img {
+    width: 210px;
+    height: 160px;
+    object-fit: cover;
+    max-width: 100%;
+    max-height:100%;
+    transition-duration: 0.1s;
+    display: flex ;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+ 
 
 
 img {
@@ -145,16 +159,18 @@ img {
     border-radius: 20px;
     object-fit: contain;
     max-width: 100%;
+    filter:brightness(80%);
     
 
 }
-img :hover {
-    box-shadow: 3px 3px 4px black;
+ img:hover {
+    filter: brightness(100%);
 }
 
 #nom-ville {
     text-align: center;
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 
@@ -196,13 +212,19 @@ footer div ul li a:hover{
 }
 footer div ul  {
     list-style:none;
+    align-items: center;
+    justify-content: center;
 }
 footer .information a {
     text-decoration: none;
     margin-left: 30px;
     padding: 10px;
     margin: 10px;
+    align-items: center;
     
+}
+footer #info{
+    align-items: center;
 }
 
 
@@ -210,13 +232,17 @@ footer .information a {
 
 h3 {
     padding: 0;
-    margin-left: 30px;
+    margin-left: 40px;
     
 }
 
 .footer{
     display: flex;
     width: 100%;
+}
+ul {
+    align-items: center;
+    justify-content: center;
 }
 ul li{
     flex-wrap: wrap;
